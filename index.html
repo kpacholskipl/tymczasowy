@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+          content="Nazywam sie Krystian Pacholski.Zajmuję się programowaniem, skupiając się na tworzeniu stron internetowych, a to jest moje portfolio"/>
+    <meta name=”robots” content=”noindex,nofollow”>
+    <meta property=”og:type” content=”portfolio”/>
+    <meta property=”og:title” content="Krystian Pacholski - Junior Web Developer"/>
+    <meta property=”og:description”
+          content="Nazywam sie Krystian Pacholski.Zajmuję się programowaniem, skupiając się na tworzeniu stron internetowych, a to jest moje portfolio"/>
+    <meta property=”og:image” content=”https://kpacholski.pl/img/pacholski-page.jpg”/>
+    <meta property=”og:url” content=”https://kpacholski.pl”/>
+    <meta property=”og:site_name” content="Krystian Pacholski - Junior Web Developer"/>
+    <title>Krystian Pacholski - Junior Web Developer</title>
+    <link rel="icon" href="<%= BASE_URL %>img/logo.png">
+    <link rel=”canonical” href=”https://kpacholski.pl/”/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link href="@/styles/app.scss" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="menu">
+        <img class="logo" src="img/logo1.gif">
+        <ul class="toolbar">
+            <li>
+                <a href="index.html">
+                    <button type="button" class="toolbar-button">Cześć</button>
+                </a>
+            </li>
+            <li><a href="#"> <button type="button" class="toolbar-button">O mnie</button></a>
+                <ul>
+                    <li><a href="table.html"> <button type="button" class="toolbar-button-list">Tabela</button></a></li>
+                    <li><a> <button type="button" class="toolbar-button-list">Projekty</button></a>
+                        <ul>
+                            <li><a href="https://grocero.pl/" target="_blank"> <button type="button" class="toolbar-button-list">Grocero</button></a></li>
+                            <li><a href="http://kpacholski.pl/" target="_blank"> <button type="button" class="toolbar-button-list">Kpacholski</button></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+                <!--<button type="button" class="toolbar-button">Umiejętności</button>-->
+
+            <li>
+                <a href="contact.html">
+                    <button type="submit" onclick="" class="toolbar-button">Kontakt</button>
+                </a>
+            </li>
+            <li>
+                <a href="sing_in.html">
+                    <button type="submit" onclick="" class="toolbar-button">Zaloguj się</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main">
+
+        <img class="personal" src="img/personal.jpg">
+        <div class="personal-text">
+            <h1>Cześć wszystkim, jestem</h1>
+            <br>
+            <h2>Krystian Pacholski</h2>
+            <br>
+            <h3>Junior WEB Developer</h3>
+            <br>
+            <p>Chłopak marnujący trzeci rok w technikum informatycznym ambitnie dążący do realizacji swoich
+                nieposkromionych marzeń.<br> W wolnej chwili lubi sięgnąć po ciekawą książkę koniecznie z
+                kubkiem pełnym pysznej kawy ;3 <br></p>
+        </div>
+    </main>
+    <footer class="footer">
+        ©Krystian Pacholski
+    </footer>
+</div>
+</body>
+</html>
