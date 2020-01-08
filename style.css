@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 20vh;
+    width: 100%;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    list-style: none;
+}
+
+ul {
+    position: absolute;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0 0;
+}
+
+ul ul li {
+
+    display: block;
+}
+
+ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.logo {
+    width: auto;
+    height: 18vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    float: left;
+}
+
+.menu {
+    position: relative;
+    width: 80w;
+    vertical-align: middle;
+    text-align: center
+
+}
+
+.toolbar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.toolbar-button {
+    width: 9vw;
+    height: 5vh;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.toolbar-button-list {
+    width: 9vw;
+    height: 5vh;
+    left: 2vw;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid red;
+}
+
+.toolbar-button:hover {
+    background-color: red !important;
+    color: black;
+}
+
+.toolbar-button:focus {
+    outline: none;
+    border: none;
+}
+.toolbar-button-list:hover {
+    background-color: red !important;
+    color: black;
+    border: 2px solid red;
+}
+
+.toolbar-button-list:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+
+main {
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+main h2 {
+    font-size: 2rem;
+}
+
+main h3 {
+    font-size: 1.5rem;
+}
+
+main p {
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.personal {
+    display: block;
+    float: left;
+    margin-top: 10vh;
+    width: 50vw;
+    height: auto;
+}
+
+.personal-text {
+    float: left;
+    font-family: Trebuchet MS, sans-serif;
+    width: 20vw;
+    height: 50vh;
+    margin-top: 25vh;
+}
+
+/* Kontakt page */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 7vw;
+}
+
+.students {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.students td, .students th {
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+.students tr:nth-child(even){background-color: #f2f2f2;}
+
+.students tr:hover {background-color: #ddd;}
+
+.students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: red;
+    color: black;
+}
+
+.footer {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: 20vh;
+    color: white;
+    text-align: center
+}

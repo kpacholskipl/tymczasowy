@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
     <link href="@/styles/app.scss" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <div id="wrapper">
@@ -43,7 +44,7 @@
                     </li>
                 </ul>
             </li>
-                <!--<button type="button" class="toolbar-button">Umiejętności</button>-->
+            <!--<button type="button" class="toolbar-button">Umiejętności</button>-->
 
             <li>
                 <a href="contact.html">
@@ -58,18 +59,28 @@
         </ul>
     </nav>
     <main id="main">
+        <div class="container">
+            <br>
+            <h2 style="text-align: center;">Formularz kontaktowy</h2>
+                <form action="#">
+                    <label>Imię</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Twoje imię..">
 
-        <img class="personal" src="img/personal.jpg">
-        <div class="personal-text">
-            <h1>Cześć wszystkim, jestem</h1>
-            <br>
-            <h2>Krystian Pacholski</h2>
-            <br>
-            <h3>Junior WEB Developer</h3>
-            <br>
-            <p>Chłopak marnujący trzeci rok w technikum informatycznym ambitnie dążący do realizacji swoich
-                nieposkromionych marzeń.<br> W wolnej chwili lubi sięgnąć po ciekawą książkę koniecznie z
-                kubkiem pełnym pysznej kawy ;3 <br></p>
+                    <label for="lname">Nazwisko</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Twoje nazwisko..">
+
+                    <label for="country">Miasto</label>
+                    <select id="country" name="country">
+                        <option value="opoczno">Opoczno</option>
+                        <option value="lodz">Łódź</option>
+                        <option value="warszawa">Warszawa</option>
+                    </select>
+
+                    <label for="subject">Wiadomość</label>
+                    <textarea id="subject" name="subject" placeholder="Napisz tutaj.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Wyślij" style="width: 20vw; margin-left: 24vw;">
+                </form>
         </div>
     </main>
     <footer class="footer">
